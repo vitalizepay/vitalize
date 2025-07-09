@@ -3,659 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalize - Digital Transformation & Technology Solutions</title>
-    <meta name="description" content="Vitalize delivers cutting-edge digital solutions, web development, mobile apps, and consulting services to transform your business.">
-    <meta name="keywords" content="digital transformation, web development, mobile apps, AI solutions, cloud computing">
-    <meta name="author" content="Vitalize Technologies">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Vitalize - Digital Transformation & Technology Solutions">
-    <meta property="og:description" content="Empowering businesses through innovative technology solutions.">
-    <meta property="og:image" content="https://vitalize.com/images/social-preview.jpg">
-    <meta property="og:url" content="https://vitalize.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    
-    <!-- Preload important resources -->
-    <link rel="preload" href="images/hero-bg.jpg" as="image">
-    <link rel="preload" href="js/main.js" as="script">
+    <title>Vitalize - IT Solutions & Digital Services</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-spinner">
-            <div class="spinner"></div>
-            <img src="images/logo.png" alt="Vitalize Loading" class="loading-logo">
-        </div>
-    </div>
-
-    <!-- Header/Navigation -->
-    <header class="header">
+    <!-- ======= Header / Navbar ======= -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Vitalize Logo" width="180" height="40">
-                </a>
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/vitalize-logo.png" alt="Vitalize" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <div class="header-cta">
-                <a href="contact.html" class="btn btn-primary">Get Started</a>
-            </div>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Hero Section with Particle Background -->
-    <section class="hero" id="particles-js">
-        <div class="container">
-            <div class="hero-content">
-                <h1 data-aos="fade-up" data-aos-delay="100">Transform Your Business Digitally</h1>
-                <p data-aos="fade-up" data-aos-delay="200">Vitalize provides innovative technology solutions to help businesses thrive in the digital age.</p>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
-                    <a href="services.html" class="btn btn-primary">Explore Services</a>
-                    <a href="contact.html" class="btn btn-secondary">Free Consultation</a>
+    <!-- ======= Hero Section ======= -->
+    <section class="hero-section bg-primary text-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Transform Your Business with <span class="text-warning">Vitalize</span></h1>
+                    <p class="lead mb-4">We provide cutting-edge IT solutions to help your business grow in the digital world.</p>
+                    <a href="#contact" class="btn btn-light btn-lg me-2">Get Started</a>
+                    <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/img/hero-img.png" class="img-fluid" alt="Digital Solutions">
                 </div>
             </div>
-            <div class="hero-scroll" data-aos="fade-up" data-aos-delay="400">
-                <span>Scroll Down</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
         </div>
     </section>
 
-    <!-- Client Logos Marquee -->
-    <section class="client-marquee">
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <img src="images/clients/client1.png" alt="Client Logo">
-                <img src="images/clients/client2.png" alt="Client Logo">
-                <img src="images/clients/client3.png" alt="Client Logo">
-                <img src="images/clients/client4.png" alt="Client Logo">
-                <img src="images/clients/client5.png" alt="Client Logo">
-                <img src="images/clients/client6.png" alt="Client Logo">
-                <img src="images/clients/client7.png" alt="Client Logo">
-                <img src="images/clients/client8.png" alt="Client Logo">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="text-muted">We offer a wide range of IT solutions tailored to your needs.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-up">About Vitalize</h2>
-                <p data-aos="fade-up" data-aos-delay="100">We're more than just a technology company</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <h3>Digital Innovation Partners</h3>
-                    <p>Founded in 2015, Vitalize has been at the forefront of digital transformation, helping businesses of all sizes navigate the complex world of technology with customized solutions that drive growth and efficiency.</p>
-                    <p>Our team of experts combines technical expertise with business acumen to deliver solutions that not only work but also provide measurable results.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="150">0</div>
-                            <div class="stat-label">Happy Clients</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="85">0</div>
-                            <div class="stat-label">Team Members</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="300">0</div>
-                            <div class="stat-label">Projects Completed</div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Web Development</h5>
+                            <p class="text-muted">Custom websites and web applications built with modern technologies.</p>
                         </div>
                     </div>
-                    <a href="about.html" class="btn btn-primary">Our Story</a>
                 </div>
-                <div class="about-image" data-aos="fade-left">
-                    <img src="images/about-img.jpg" alt="Vitalize Team" loading="lazy">
-                    <div class="experience-badge">
-                        <span>8+</span>
-                        <p>Years Experience</p>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Mobile Apps</h5>
+                            <p class="text-muted">iOS and Android apps designed for performance and user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cloud fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Cloud Solutions</h5>
+                            <p class="text-muted">Scalable cloud infrastructure and migration services.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section with 3D Visualization -->
-    <section class="services-section">
+    <!-- ======= Footer ======= -->
+    <footer class="bg-dark text-white py-5">
         <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-up">Our Services</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Comprehensive solutions for your digital needs</p>
-            </div>
-            
-            <div class="services-container">
-                <div class="services-nav" data-aos="fade-right">
-                    <ul>
-                        <li class="active" data-service="web">
-                            <i class="fas fa-code"></i>
-                            <span>Web Development</span>
-                        </li>
-                        <li data-service="mobile">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Mobile Apps</span>
-                        </li>
-                        <li data-service="cloud">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud Solutions</span>
-                        </li>
-                        <li data-service="ai">
-                            <i class="fas fa-robot"></i>
-                            <span>AI & ML</span>
-                        </li>
-                        <li data-service="marketing">
-                            <i class="fas fa-bullseye"></i>
-                            <span>Digital Marketing</span>
-                        </li>
-                        <li data-service="security">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Cyber Security</span>
-                        </li>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="assets/img/vitalize-logo-white.png" alt="Vitalize" height="40">
+                    <p class="mt-3">Empowering businesses with innovative IT solutions since 2023.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
                     </ul>
                 </div>
-                
-                <div class="services-visualization" data-aos="fade-left">
-                    <div id="service-canvas"></div>
-                    <div class="service-details">
-                        <h3 id="service-title">Web Development</h3>
-                        <p id="service-description">Custom websites and web applications built with the latest technologies to ensure performance, security, and scalability.</p>
-                        <a href="services.html" class="btn btn-primary">Learn More</a>
-                    </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Business Ave, City</p>
+                    <p><i class="fas fa-phone me-2"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@vitalize.com</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-up">Our Process</h2>
-                <p data-aos="fade-up" data-aos-delay="100">A structured approach to delivering success</p>
-            </div>
-            
-            <div class="process-steps">
-                <div class="process-step" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h3>Discovery</h3>
-                        <p>We begin by thoroughly understanding your business objectives, challenges, and requirements.</p>
-                    </div>
-                </div>
-                <div class="process-step" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h3>Planning</h3>
-                        <p>Our team creates a detailed project roadmap with milestones and deliverables.</p>
-                    </div>
-                </div>
-                <div class="process-step" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h3>Design</h3>
-                        <p>We craft intuitive user experiences and visually appealing interfaces.</p>
-                    </div>
-                </div>
-                <div class="process-step" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3>Development</h3>
-                        <p>Our developers build robust solutions using industry best practices.</p>
-                    </div>
-                </div>
-                <div class="process-step" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="step-number">05</div>
-                    <div class="step-content">
-                        <h3>Testing</h3>
-                        <p>We rigorously test all components to ensure quality and performance.</p>
-                    </div>
-                </div>
-                <div class="process-step" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="step-number">06</div>
-                    <div class="step-content">
-                        <h3>Deployment</h3>
-                        <p>We launch your solution and provide comprehensive training.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section with Filter -->
-    <section class="portfolio-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-up">Our Work</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Some of our recent projects</p>
-            </div>
-            
-            <div class="portfolio-filter" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-                <button class="filter-btn" data-filter="saas">SaaS</button>
-            </div>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="web ecommerce" data-aos="fade-up">
-                    <img src="images/portfolio/ecommerce.jpg" alt="E-commerce Platform" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h3>Global E-commerce Platform</h3>
-                        <p>Built a scalable online store with advanced inventory management</p>
-                        <a href="portfolio/ecommerce-case-study.html" class="btn btn-primary">View Case Study</a>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/portfolio/healthcare.jpg" alt="Healthcare App" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h3>Healthcare Mobile App</h3>
-                        <p>Patient management system with telemedicine features</p>
-                        <a href="portfolio/healthcare-case-study.html" class="btn btn-primary">View Case Study</a>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="web saas" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/portfolio/erp.jpg" alt="ERP Solution" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h3>Enterprise ERP Solution</h3>
-                        <p>Customized business management system for manufacturing</p>
-                        <a href="portfolio/erp-case-study.html" class="btn btn-primary">View Case Study</a>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="300">
-                    <img src="images/portfolio/fitness.jpg" alt="Fitness App" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h3>Fitness Tracking App</h3>
-                        <p>AI-powered workout and nutrition tracking application</p>
-                        <a href="portfolio/fitness-case-study.html" class="btn btn-primary">View Case Study</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center" data-aos="fade-up">
-                <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-up">Client Success Stories</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Trusted by businesses worldwide</p>
-            </div>
-            
-            <div class="testimonials-slider">
-                <div class="testimonial" data-aos="fade-up">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"Vitalize transformed our online presence with a stunning website and integrated e-commerce solution. Their team was professional, responsive, and delivered beyond our expectations."</p>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="images/clients/client1.jpg" alt="Sarah Johnson" loading="lazy">
-                        <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>CEO, Retail Solutions Inc.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>"The mobile app developed by Vitalize has significantly improved our customer engagement. Their attention to detail and user experience focus made all the difference."</p>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="images/clients/client2.jpg" alt="Michael Chen" loading="lazy">
-                        <div class="author-info">
-                            <h4>Michael Chen</h4>
-                            <p>Director of Technology, HealthPlus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="testimonial-videos" data-aos="fade-up">
-                <h3>Video Testimonials</h3>
-                <div class="video-grid">
-                    <div class="video-item">
-                        <div class="video-thumbnail" data-video="videos/testimonial1.mp4">
-                            <img src="images/video-thumb1.jpg" alt="Video Testimonial" loading="lazy">
-                            <div class="play-button">
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video-thumbnail" data-video="videos/testimonial2.mp4">
-                            <img src="images/video-thumb2.jpg" alt="Video Testimonial" loading="lazy">
-                            <div class="play-button">
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-up">Meet Our Leadership</h2>
-                <p data-aos="fade-up" data-aos-delay="100">The experts driving our success</p>
-            </div>
-            
-            <div class="team-grid">
-                <div class="team-member" data-aos="fade-up">
-                    <div class="member-image">
-                        <img src="images/team/ceo.jpg" alt="John Smith" loading="lazy">
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>John Smith</h3>
-                        <p>CEO & Founder</p>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member-image">
-                        <img src="images/team/cto.jpg" alt="Emily Johnson" loading="lazy">
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Emily Johnson</h3>
-                        <p>Chief Technology Officer</p>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member-image">
-                        <img src="images/team/cmo.jpg" alt="David Lee" loading="lazy">
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>David Lee</h3>
-                        <p>Chief Marketing Officer</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center" data-aos="fade-up">
-                <a href="about.html#team" class="btn btn-primary">View Full Team</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section class="blog-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-up">Latest Insights</h2>
-                <p data-aos="fade-up" data-aos-delay="100">From our blog</p>
-            </div>
-            
-            <div class="blog-grid">
-                <div class="blog-card" data-aos="fade-up">
-                    <div class="blog-image">
-                        <img src="images/blog/ai-trends.jpg" alt="AI Trends" loading="lazy">
-                        <div class="blog-date">
-                            <span>15</span>
-                            <span>Jun 2023</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-tag"></i> Technology</span>
-                            <span><i class="fas fa-clock"></i> 5 min read</span>
-                        </div>
-                        <h3><a href="blog/ai-trends-2023.html">Top AI Trends Shaping Business in 2023</a></h3>
-                        <p>Explore the most impactful artificial intelligence trends that are transforming industries this year.</p>
-                        <a href="blog/ai-trends-2023.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-image">
-                        <img src="images/blog/web-security.jpg" alt="Web Security" loading="lazy">
-                        <div class="blog-date">
-                            <span>02</span>
-                            <span>Jul 2023</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-tag"></i> Security</span>
-                            <span><i class="fas fa-clock"></i> 8 min read</span>
-                        </div>
-                        <h3><a href="blog/web-security-best-practices.html">Essential Web Security Best Practices</a></h3>
-                        <p>Protect your online assets with these crucial security measures every business should implement.</p>
-                        <a href="blog/web-security-best-practices.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="blog-image">
-                        <img src="images/blog/cloud-migration.jpg" alt="Cloud Migration" loading="lazy">
-                        <div class="blog-date">
-                            <span>25</span>
-                            <span>Jun 2023</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="fas fa-tag"></i> Cloud</span>
-                            <span><i class="fas fa-clock"></i> 6 min read</span>
-                        </div>
-                        <h3><a href="blog/cloud-migration-guide.html">The Complete Cloud Migration Guide</a></h3>
-                        <p>Step-by-step guide to successfully migrating your business operations to the cloud.</p>
-                        <a href="blog/cloud-migration-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center" data-aos="fade-up">
-                <a href="blog.html" class="btn btn-primary">View All Articles</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content" data-aos="zoom-in">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Contact us today for a free consultation and let's discuss how we can help you achieve your digital goals.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    <a href="tel:+15551234567" class="btn btn-secondary">
-                        <i class="fas fa-phone"></i> Call Us Now
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text" data-aos="fade-right">
-                    <h3>Stay Updated</h3>
-                    <p>Subscribe to our newsletter for the latest tech insights, company news, and special offers.</p>
-                </div>
-                <div class="newsletter-form" data-aos="fade-left">
-                    <form id="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                    <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="images/logo-white.png" alt="Vitalize Logo" class="footer-logo" loading="lazy">
-                    <p>Empowering businesses through innovative technology solutions since 2015.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html#web">Web Development</a></li>
-                        <li><a href="services.html#mobile">Mobile App Development</a></li>
-                        <li><a href="services.html#cloud">Cloud Solutions</a></li>
-                        <li><a href="services.html#ai">AI & Machine Learning</a></li>
-                        <li><a href="services.html#marketing">Digital Marketing</a></li>
-                        <li><a href="services.html#security">Cyber Security</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Park, Silicon Valley, CA 94025</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@vitalize.com</li>
-                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Vitalize Technologies. All Rights Reserved.</p>
-                <div class="footer-links">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms-of-service.html">Terms of Service</a>
-                    <a href="cookies.html">Cookie Policy</a>
-                </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Vitalize. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Video Modal -->
-    <div class="video-modal" id="videoModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <video controls id="modalVideo">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
-
-    <!-- AI Chatbot Widget -->
-    <div class="chatbot-widget" id="chatbotWidget">
-        <div class="chatbot-header">
-            <h4>Vitalize Assistant</h4>
-            <button class="close-chatbot">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="chatbot-messages" id="chatbotMessages">
-            <div class="bot-message">
-                <p>Hello! I'm your Vitalize assistant. How can I help you today?</p>
-            </div>
-        </div>
-        <div class="chatbot-input">
-            <input type="text" placeholder="Type your message..." id="chatbotInput">
-            <button id="sendMessage">
-                <i class="fas fa-paper-plane"></i>
-            </button>
-        </div>
-    </div>
-    <div class="chatbot-trigger" id="chatbotTrigger">
-        <i class="fas fa-robot"></i>
-    </div>
-
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/service-visualizer.js"></script>
-    <script src="js/chatbot.js"></script>
-    <script src="js/portfolio-filter.js"></script>
-    <script src="js/main.js"></script>
-    
-    <!-- Initialize Particles.js -->
-    <script>
-        particlesJS.load('particles-js', 'assets/particles.json', function() {
-            console.log('Particles.js loaded');
-        });
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
