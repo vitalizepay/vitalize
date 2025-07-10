@@ -3,16 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalize - Digital Transformation Experts</title>
-    <!-- Bootstrap 5 CSS -->
+    <title>VitalizePay - Seamless Payment Solutions for India</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <style>
         :root {
@@ -42,6 +37,14 @@
             max-height: 60px;
             width: auto;
             margin: 0 auto;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .client-slider img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
         }
         
         /* Why Choose Us */
@@ -57,11 +60,13 @@
         
         /* Services */
         .service-card {
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
         .service-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
         }
         
         /* Process Section */
@@ -223,11 +228,10 @@
     </style>
 </head>
 <body>
-    <!-- ======= Header / Navbar ======= -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="https://via.placeholder.com/150x50?text=Vitalize" alt="Vitalize" height="40">
+                <img src="https://via.placeholder.com/150x50?text=VitalizePay" alt="VitalizePay" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -236,25 +240,25 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3"><a href="#get-started" class="btn btn-primary">Get Started</a></li>
+                    <li class="nav-item ms-lg-3"><a href="#get-started" class="btn btn-primary">Sign Up</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ======= Hero Section ======= -->
     <section class="hero-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h1 class="display-4 fw-bold mb-4">Transform Your Digital Presence with <span class="text-primary">Vitalize</span></h1>
-                    <p class="lead mb-4">We deliver cutting-edge technology solutions that drive growth, efficiency, and innovation for businesses worldwide.</p>
+                    <h1 class="display-4 fw-bold mb-4">The Future of Payments is Here with <span class="text-primary">VitalizePay</span></h1>
+                    <p class="lead mb-4">We provide robust, secure, and developer-friendly payment solutions to help your business grow and scale in India.</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="#services" class="btn btn-primary btn-lg px-4">Explore Services</a>
+                        <a href="#get-started" class="btn btn-primary btn-lg px-4">Create Account</a>
                         <a href="#contact" class="btn btn-outline-primary btn-lg px-4">
-                            <i class="fas fa-phone-alt me-2"></i> Talk to Expert
+                            <i class="fas fa-headset me-2"></i> Talk to Sales
                         </a>
                     </div>
                     <div class="d-flex align-items-center mt-4">
@@ -271,38 +275,37 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                            <p class="small mb-0">Trusted by 150+ businesses worldwide</p>
+                            <p class="small mb-0">Trusted by 1,000+ businesses across India</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-lg" alt="Digital Transformation">
+                    <img src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-lg" alt="Payment Solutions">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ======= Clients Section ======= -->
     <section class="py-4 bg-light">
         <div class="container">
+            <h6 class="text-center text-muted fw-light mb-4">POWERING GROWTH FOR STARTUPS AND LEADING COMPANIES</h6>
             <div class="client-slider">
-                <div class="px-3"><img src="https://via.placeholder.com/150x60/0d6efd/ffffff?text=Tata" alt="Tata" class="img-fluid grayscale"></div>
-                <div class="px-3"><img src="https://via.placeholder.com/150x60/0d6efd/ffffff?text=Infosys" alt="Infosys" class="img-fluid grayscale"></div>
-                <div class="px-3"><img src="https://via.placeholder.com/150x60/0d6efd/ffffff?text=Reliance" alt="Reliance" class="img-fluid grayscale"></div>
-                <div class="px-3"><img src="https://via.placeholder.com/150x60/0d6efd/ffffff?text=Wipro" alt="Wipro" class="img-fluid grayscale"></div>
-                <div class="px-3"><img src="https://via.placeholder.com/150x60/0d6efd/ffffff?text=Mahindra" alt="Mahindra" class="img-fluid grayscale"></div>
+                <div class="px-3"><img src="https://via.placeholder.com/150x60/cccccc/ffffff?text=E-Shop" alt="E-commerce Client" class="img-fluid"></div>
+                <div class="px-3"><img src="https://via.placeholder.com/150x60/cccccc/ffffff?text=SaaSify" alt="SaaS Client" class="img-fluid"></div>
+                <div class="px-3"><img src="https://via.placeholder.com/150x60/cccccc/ffffff?text=EduLearn" alt="Ed-Tech Client" class="img-fluid"></div>
+                <div class="px-3"><img src="https://via.placeholder.com/150x60/cccccc/ffffff?text=GoTravel" alt="Travel Client" class="img-fluid"></div>
+                <div class="px-3"><img src="https://via.placeholder.com/150x60/cccccc/ffffff?text=Health+" alt="Healthcare Client" class="img-fluid"></div>
             </div>
         </div>
     </section>
 
-    <!-- ======= Why Choose Us Section ======= -->
     <section id="why-us" class="py-5 bg-white">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <span class="badge bg-primary-light text-primary rounded-pill mb-3">Why Choose Us</span>
-                    <h2 class="fw-bold mb-4">We Deliver Exceptional Value to Our Clients</h2>
-                    <p class="lead">Our unique approach combines technical expertise with business acumen to deliver solutions that drive real results.</p>
+                    <h2 class="fw-bold mb-4">We Offer the Most Secure & Reliable Payment Platform</h2>
+                    <p class="lead">Our focus on technology, security, and support ensures the best payment experience for you and your customers.</p>
                     <div class="d-flex align-items-center mt-5">
                         <div class="me-4">
                             <div class="icon-box bg-primary text-white">
@@ -310,8 +313,8 @@
                             </div>
                         </div>
                         <div>
-                            <h5 class="fw-bold">24/7 Support</h5>
-                            <p class="mb-0">Round-the-clock assistance for your critical needs</p>
+                            <h5 class="fw-bold">24/7 Priority Support</h5>
+                            <p class="mb-0">Expert support via chat, email, and phone, anytime you need it.</p>
                         </div>
                     </div>
                 </div>
@@ -321,10 +324,10 @@
                             <div class="card border-0 shadow-sm h-100">
                                 <div class="card-body p-4">
                                     <div class="icon-box bg-primary-light mb-3">
-                                        <i class="fas fa-bolt text-primary"></i>
+                                        <i class="fas fa-tachometer-alt text-primary"></i>
                                     </div>
-                                    <h5 class="fw-bold">Rapid Deployment</h5>
-                                    <p>We implement solutions 40% faster than industry standards without compromising quality.</p>
+                                    <h5 class="fw-bold">High Success Rates</h5>
+                                    <p>Our smart routing technology ensures industry-leading transaction success rates.</p>
                                 </div>
                             </div>
                         </div>
@@ -334,8 +337,8 @@
                                     <div class="icon-box bg-primary-light mb-3">
                                         <i class="fas fa-shield-alt text-primary"></i>
                                     </div>
-                                    <h5 class="fw-bold">Enterprise Security</h5>
-                                    <p>Military-grade security protocols to protect your data and infrastructure.</p>
+                                    <h5 class="fw-bold">Bank-Level Security</h5>
+                                    <p>PCI DSS Level 1 compliant, ensuring your data is always safe and secure.</p>
                                 </div>
                             </div>
                         </div>
@@ -343,10 +346,10 @@
                             <div class="card border-0 shadow-sm h-100">
                                 <div class="card-body p-4">
                                     <div class="icon-box bg-primary-light mb-3">
-                                        <i class="fas fa-chart-line text-primary"></i>
+                                        <i class="fas fa-rupee-sign text-primary"></i>
                                     </div>
-                                    <h5 class="fw-bold">Proven Results</h5>
-                                    <p>Our clients see an average 300% ROI within the first year of implementation.</p>
+                                    <h5 class="fw-bold">Transparent Pricing</h5>
+                                    <p>Simple, competitive pricing with no hidden fees. Pay only for what you use.</p>
                                 </div>
                             </div>
                         </div>
@@ -354,10 +357,10 @@
                             <div class="card border-0 shadow-sm h-100">
                                 <div class="card-body p-4">
                                     <div class="icon-box bg-primary-light mb-3">
-                                        <i class="fas fa-users text-primary"></i>
+                                        <i class="fas fa-code text-primary"></i>
                                     </div>
-                                    <h5 class="fw-bold">Dedicated Teams</h5>
-                                    <p>Get a team of experts focused solely on your project's success.</p>
+                                    <h5 class="fw-bold">Developer-Friendly API</h5>
+                                    <p>Integrate quickly with our robust APIs and comprehensive documentation.</p>
                                 </div>
                             </div>
                         </div>
@@ -367,29 +370,28 @@
         </div>
     </section>
 
-    <!-- ======= Services Section ======= -->
     <section id="services" class="py-5 bg-light">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <span class="badge bg-primary-light text-primary rounded-pill mb-3">Our Services</span>
-                <h2 class="fw-bold mb-3">Comprehensive Digital Solutions</h2>
-                <p class="lead mx-auto" style="max-width: 700px">We offer end-to-end technology services to help your business thrive in the digital age.</p>
+                <h2 class="fw-bold mb-3">A Complete Payment Solution</h2>
+                <p class="lead mx-auto" style="max-width: 700px;">Accept payments, manage subscriptions, and prevent fraud with our all-in-one platform.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="card service-card border-0 h-100">
                         <div class="card-body p-4">
                             <div class="icon-box bg-primary text-white mb-4">
-                                <i class="fas fa-laptop-code fa-2x"></i>
+                                <i class="fas fa-credit-card fa-2x"></i>
                             </div>
-                            <h3 class="h4 fw-bold mb-3">Custom Software Development</h3>
-                            <p class="mb-4">Tailored applications designed to solve your unique business challenges with precision.</p>
+                            <h3 class="h4 fw-bold mb-3">Payment Gateway</h3>
+                            <p class="mb-4">Accept payments from all major credit/debit cards, UPI, net banking, and wallets.</p>
                             <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Web Applications</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Enterprise Systems</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> SaaS Solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> 100+ Payment Modes</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Mobile-Optimized Checkout</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Powerful Dashboard</li>
                             </ul>
-                            <a href="services.html#software" class="btn btn-sm btn-outline-primary">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="services.html#gateway" class="btn btn-sm btn-outline-primary">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -397,16 +399,16 @@
                     <div class="card service-card border-0 h-100">
                         <div class="card-body p-4">
                             <div class="icon-box bg-primary text-white mb-4">
-                                <i class="fas fa-cloud fa-2x"></i>
+                                <i class="fas fa-sync-alt fa-2x"></i>
                             </div>
-                            <h3 class="h4 fw-bold mb-3">Cloud & DevOps Services</h3>
-                            <p class="mb-4">Optimize your infrastructure with our cloud migration and automation expertise.</p>
+                            <h3 class="h4 fw-bold mb-3">Subscription Billing</h3>
+                            <p class="mb-4">Automate recurring payments and manage subscriptions with ease and flexibility.</p>
                             <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> AWS/Azure/GCP</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> CI/CD Pipelines</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Containerization</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Flexible Billing Cycles</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Automated Invoicing</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Subscription Management</li>
                             </ul>
-                            <a href="services.html#cloud" class="btn btn-sm btn-outline-primary">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="services.html#subscriptions" class="btn btn-sm btn-outline-primary">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -414,16 +416,16 @@
                     <div class="card service-card border-0 h-100">
                         <div class="card-body p-4">
                             <div class="icon-box bg-primary text-white mb-4">
-                                <i class="fas fa-robot fa-2x"></i>
+                                <i class="fas fa-link fa-2x"></i>
                             </div>
-                            <h3 class="h4 fw-bold mb-3">AI & Machine Learning</h3>
-                            <p class="mb-4">Leverage artificial intelligence to gain competitive advantage and automate processes.</p>
+                            <h3 class="h4 fw-bold mb-3">Payment Links</h3>
+                            <p class="mb-4">Create and share payment links instantly to collect payments without a website or app.</p>
                             <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Predictive Analytics</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Computer Vision</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> NLP Solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> No-Code Solution</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Share via SMS, Email, etc.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Real-time Tracking</li>
                             </ul>
-                            <a href="services.html#ai" class="btn btn-sm btn-outline-primary">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="services.html#links" class="btn btn-sm btn-outline-primary">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -434,43 +436,42 @@
         </div>
     </section>
 
-    <!-- ======= Process Section ======= -->
     <section class="py-5 bg-white">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Our Process">
+                    <img src="https://images.unsplash.com/photo-1583344654388-755743c72b84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Onboarding Process">
                 </div>
                 <div class="col-lg-6">
                     <span class="badge bg-primary-light text-primary rounded-pill mb-3">Our Process</span>
-                    <h2 class="fw-bold mb-4">A Proven Methodology for Success</h2>
+                    <h2 class="fw-bold mb-4">Start Accepting Payments in Minutes</h2>
                     <div class="process-steps">
                         <div class="step d-flex mb-4">
                             <div class="process-step-number">1</div>
                             <div class="step-content">
-                                <h5 class="fw-bold">Discovery & Planning</h5>
-                                <p class="mb-0">We analyze your requirements and create a detailed project roadmap.</p>
+                                <h5 class="fw-bold">Create Your Account</h5>
+                                <p class="mb-0">Sign up with your business details to get started.</p>
                             </div>
                         </div>
                         <div class="step d-flex mb-4">
                             <div class="process-step-number">2</div>
                             <div class="step-content">
-                                <h5 class="fw-bold">Design & Prototyping</h5>
-                                <p class="mb-0">Create wireframes and prototypes to visualize the solution.</p>
+                                <h5 class="fw-bold">Submit Your KYC</h5>
+                                <p class="mb-0">Complete your business verification by uploading required documents.</p>
                             </div>
                         </div>
                         <div class="step d-flex mb-4">
                             <div class="process-step-number">3</div>
                             <div class="step-content">
-                                <h5 class="fw-bold">Development</h5>
-                                <p class="mb-0">Agile development with regular demos and feedback cycles.</p>
+                                <h5 class="fw-bold">Integrate & Go Live</h5>
+                                <p class="mb-0">Use our developer-friendly tools to integrate and start collecting payments.</p>
                             </div>
                         </div>
                         <div class="step d-flex">
                             <div class="process-step-number">4</div>
                             <div class="step-content">
-                                <h5 class="fw-bold">Testing & Deployment</h5>
-                                <p class="mb-0">Rigorous QA testing followed by seamless deployment.</p>
+                                <h5 class="fw-bold">Receive Settlements</h5>
+                                <p class="mb-0">Get your payments settled directly to your bank account quickly.</p>
                             </div>
                         </div>
                     </div>
@@ -479,16 +480,14 @@
         </div>
     </section>
 
-    <!-- ======= Testimonials Section ======= -->
     <section class="testimonials-section">
         <div class="container">
             <div class="section-header">
-                <h2>Client Testimonials</h2>
-                <p>Don't just take our word for it. Here's what our clients say about working with us.</p>
+                <h2>Loved by Businesses Like Yours</h2>
+                <p>Don't just take our word for it. Here's what our clients say about VitalizePay.</p>
             </div>
             
             <div class="testimonial-box-container">
-                <!-- Testimonial Box 1 -->
                 <div class="testimonial-box">
                     <div class="rating">
                         <i class="fas fa-star"></i>
@@ -497,17 +496,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="quote">Vitalize transformed our e-commerce platform, resulting in a 220% increase in online sales. Their team's expertise was exceptional.</p>
+                    <p class="quote">Switching to VitalizePay was the best decision for our e-commerce store. The success rates are amazing, and the support is top-notch.</p>
                     <div class="client-info">
                         <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client" class="client-img">
                         <div class="client-details">
                             <h5>Priya Sharma</h5>
-                            <p>CEO, RetailPlus</p>
+                            <p>Founder, The Fashion Hub</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Testimonial Box 2 -->
                 <div class="testimonial-box">
                     <div class="rating">
                         <i class="fas fa-star"></i>
@@ -516,17 +514,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <p class="quote">The AI solution Vitalize developed automated 80% of our manual processes, saving us ₹3.2 Cr annually. Highly recommended!</p>
+                    <p class="quote">Their recurring billing solution automated our entire subscription process. We saved countless hours. Highly recommended for SaaS businesses!</p>
                     <div class="client-info">
                         <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client" class="client-img">
                         <div class="client-details">
                             <h5>Rahul Verma</h5>
-                            <p>CTO, FinTech Solutions</p>
+                            <p>CTO, CloudSaaS</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Testimonial Box 3 -->
                 <div class="testimonial-box">
                     <div class="rating">
                         <i class="fas fa-star"></i>
@@ -535,17 +532,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="quote">Their cloud migration strategy reduced our costs by 60% while improving performance. Vitalize is our trusted technology partner.</p>
+                    <p class="quote">The developer-friendly APIs and clear documentation made integration a breeze. We were up and running in a single day.</p>
                     <div class="client-info">
                         <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" class="client-img">
                         <div class="client-details">
                             <h5>Ananya Patel</h5>
-                            <p>IT Director, HealthCare Systems</p>
+                            <p>Lead Developer, Courseify</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Testimonial Box 4 -->
                 <div class="testimonial-box">
                     <div class="rating">
                         <i class="fas fa-star"></i>
@@ -554,12 +550,12 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="quote">The mobile app developed by Vitalize increased our customer engagement by 150%. Excellent work and great support!</p>
+                    <p class="quote">Using Payment Links has been a game-changer for our business on Instagram. We can now collect payments instantly from customers.</p>
                     <div class="client-info">
                         <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Client" class="client-img">
                         <div class="client-details">
                             <h5>Arjun Mehta</h5>
-                            <p>Founder, FoodExpress</p>
+                            <p>Owner, Artisan Goods</p>
                         </div>
                     </div>
                 </div>
@@ -567,16 +563,15 @@
         </div>
     </section>
 
-    <!-- ======= 24/7 Support Section ======= -->
     <section class="support-section">
         <div class="container py-4 text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="24/7 Support" width="60" class="me-3">
-                        <h2 class="fw-bold mb-0">24/7 Technical Support</h2>
+                        <h2 class="fw-bold mb-0">24/7 Integration Support</h2>
                     </div>
-                    <p class="lead mb-4">Our team of experts is available round-the-clock to ensure your systems run smoothly at all times.</p>
+                    <p class="lead mb-4">Our team of integration experts is available round-the-clock to help you get started and resolve any issues.</p>
                     <a href="contact.html" class="btn btn-light btn-lg px-4">
                         <i class="fas fa-headset me-2"></i> Contact Support
                     </a>
@@ -585,19 +580,18 @@
         </div>
     </section>
 
-    <!-- ======= CTA Section ======= -->
     <section id="get-started" class="py-5 bg-white">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Business?</h2>
-                    <p class="lead mb-5">Schedule a free consultation with our experts to discuss your project requirements.</p>
+                    <h2 class="display-5 fw-bold mb-4">Ready to Grow Your Business with VitalizePay?</h2>
+                    <p class="lead mb-5">Create your account today and start accepting payments with India's most trusted payment gateway.</p>
                     <div class="d-flex flex-wrap justify-content-center gap-3">
                         <a href="contact.html" class="btn btn-primary btn-lg px-4">
-                            <i class="fas fa-calendar-alt me-2"></i> Book Consultation
+                            <i class="fas fa-user-plus me-2"></i> Create a Free Account
                         </a>
                         <a href="tel:+918012345678" class="btn btn-outline-primary btn-lg px-4">
-                            <i class="fas fa-phone-alt me-2"></i> Call Us Now
+                            <i class="fas fa-phone-alt me-2"></i> Talk to Sales
                         </a>
                     </div>
                 </div>
@@ -605,13 +599,12 @@
         </div>
     </section>
 
-    <!-- ======= Footer ======= -->
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <img src="https://via.placeholder.com/150x50?text=Vitalize" alt="Vitalize" height="40" class="mb-3">
-                    <p class="mb-4">Empowering businesses through innovative technology solutions since 2015.</p>
+                    <img src="https://via.placeholder.com/150x50?text=VitalizePay" alt="VitalizePay" height="40" class="mb-3">
+                    <p class="mb-4">Empowering Indian businesses with simple, secure, and affordable payment solutions.</p>
                     <div class="social-links">
                         <a href="#" class="btn btn-sm btn-outline-dark rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="btn btn-sm btn-outline-dark rounded-circle me-2"><i class="fab fa-twitter"></i></a>
@@ -624,17 +617,17 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="about.html">About Us</a></li>
                         <li class="mb-2"><a href="#">Careers</a></li>
-                        <li class="mb-2"><a href="#">Case Studies</a></li>
                         <li class="mb-2"><a href="#">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                    <h5 class="fw-bold mb-4">Services</h5>
+                    <h5 class="fw-bold mb-4">Products</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="services.html">Web Development</a></li>
-                        <li class="mb-2"><a href="services.html">Mobile Apps</a></li>
-                        <li class="mb-2"><a href="services.html">Cloud Solutions</a></li>
-                        <li class="mb-2"><a href="services.html">AI/ML</a></li>
+                        <li class="mb-2"><a href="services.html">Payment Gateway</a></li>
+                        <li class="mb-2"><a href="services.html">Subscriptions</a></li>
+                        <li class="mb-2"><a href="services.html">Payment Links</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -642,7 +635,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex">
                             <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
-                            <span>123 Tech Park, Bangalore, KA 560001</span>
+                            <span>123 FinTech Avenue, Bangalore, KA 560001</span>
                         </li>
                         <li class="mb-3 d-flex">
                             <i class="fas fa-phone-alt text-primary mt-1 me-3"></i>
@@ -650,7 +643,7 @@
                         </li>
                         <li class="mb-3 d-flex">
                             <i class="fas fa-envelope text-primary mt-1 me-3"></i>
-                            <span>info@vitalize.in</span>
+                            <span>info@vitalizepay.in</span>
                         </li>
                     </ul>
                 </div>
@@ -658,7 +651,7 @@
             <hr class="my-4">
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2023 Vitalize Technologies. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 VitalizePay Technologies Pvt. Ltd. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="#" class="me-3">Privacy Policy</a>
@@ -668,29 +661,19 @@
         </div>
     </footer>
 
-    <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        // Initialize sliders with updated settings
         $(document).ready(function(){
-            // Client Slider
             $('.client-slider').slick({
-                infinite: true,
-                slidesToShow: 5,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
                 arrows: false,
+                dots: false,
                 responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    },
                     {
                         breakpoint: 768,
                         settings: {
